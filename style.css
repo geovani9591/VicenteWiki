@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+hr {margin: 12px 0; border-color: rgb(160, 160, 160)}
+body {background-color: rgb(189, 183, 182);}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.blackBack {
+    background-color: #0E0E0E;
+    
+}
+
+h4, h3, h2, h1, p, pre, li{
+    color: #eeeeee;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+i {color:#f0cd5c;}
+
+li {font-size: 14px;}
+
+p, pre {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+}
+
+h1 {font-size: 30px; margin-bottom: 20px;}
+h4 {font-size: 16px;}
+
+.texto{
+    margin: 30px;
+}
+
+.texto h1 {
+    margin-top: 30px;
+}
+
+.texto p {
+    text-align: justify;
+    margin: 10px 8px 0; 
+}
+
+.texto h3 {text-align: center; margin: 30px;}
+
+.lore {
+    display: flex;
+    background-color: #0E0E0E;
+    width: 80vw;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0px 20px;
+}
+
+
+.moldura {
+    background-color: #daa520;
+    width: 380px;
+    height: 655px;
+    border: 5px solid #daa520;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 30px 20px 0;
+    border-radius: 5px;
+}
+
+.moldura hr {
+    border-color: #daa520;
+}
+
+.moldura i {margin-right: 10px;}
+
+.moldura img {
+    object-fit: cover;
+    width: 230px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moldura h2 {
+    align-self: center;
+    margin: 8px 0;
+}
+
+.moldura p {margin: 7px 0 7px 5px}
+
+.ficha {
+    background-color: #0E0E0E;
+    width: 1000px;
+    margin: 130px  50px 0 5px;
+}
+
+.atributos {
+    text-align: justify;
+}
+
+.maisTexto {
+    width: 80vw;
+    padding: 0 30px 40px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0px 20px;
+}
+
+@media screen and (min-width: 2600px) {
+    .lore {
+        width: 1600px;
+    }
+    .maisTexto {
+        width: 1600px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .lore {
+        width: 100vw;
+    }
+    .maisTexto {
+        width: 100vw;
+    }
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .lore {
+        flex-direction: column;
+        align-items: center;
+    }
+    .maisTexto {
+        margin-top: 30px;
+    }
+
+    .moldura{
+        width: 60vw;
+        margin: 0 15px;
+    }
+
+    .moldura img {max-width: 200px;}
+
+    .ficha {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .moldura {width: 80vw;}
+}
